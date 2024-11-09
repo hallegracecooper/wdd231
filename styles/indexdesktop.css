@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+html {
+    max-height: 100vh;
+    min-height: 100vh;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f9f9f9;
+    max-height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex: 1;
+    height: 100%;
+    padding: 2em;
+    flex-wrap: nowrap
+}
+
+header {
+    background-color: #004466;
+    color: #ffffff;
+    padding: 1em 0;
+    text-align: center;
+    position: relative;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hamburger-btn {
+    display: none;
+}
+
+.profile-img {
+    width: 128px;
+    height: 80px;
+    border-radius: 15%;
+    margin: 5px;
+    margin-left: 15px;
+}
+
+.page-title {
+    font-weight: 700;
+}
+
+.nav-link-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #003355;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-link {
+    margin: 0 1em;
+}
+
+.link-label {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    display: block;
+}
+
+.link-label:hover,
+.link-label.active {
+    background-color: #005580;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #004466;
+    color: #ffffff;
+}
+
+#currentYear,
+#lastModified {
+    font-weight: bold;
+}
+
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.bottom-section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.certificate-section {
+    width: 100%;
+}
+
+.coursework-section,
+.location-section,
+.certificate-section {
+    background-color: #ffffff;
+    padding: 1em;
+    margin: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.coursework-section {
+    width: 65%;
+}
+
+.location-section {
+    width: 35%;
+}
+
+.cert-sect-title {
+    text-align: center;
+}
+
+.section-title {
+    border-bottom: 2px solid #004466;
+    padding-bottom: 0.5em;
+    text-align: center;
+}
+
+.image-container {
+    text-align: center;
+}
+
+.image-container img {
+    border-radius: 8px;
+    max-width: 50%;
+}
+
+.certificate-filter {
+    margin-bottom: 1em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.filter-btn {
+    background-color: #004466;
+    color: #ffffff;
+    border: none;
+    padding: 0.5em 1em;
+    margin: 0 0.5em;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 15%;
+}
+
+.certificate-filter button:hover {
+    background-color: #005580;
+}
+
+.course-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.course-list-section {
+    padding: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.course-button {
+    background-color: #bb4b00;
+    color: #ffffff;
+    border: none;
+    padding: 0.5em;
+    width: 33%;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.course-button:hover {
+    background-color: #d65f00;
+}
+
+@media (max-width: 800px) {
+ 
+    .hamburger-btn {
+        position: absolute;
+        top: 10px;      
+        right: 10px;    
+        font-size: 24px; 
+        cursor: pointer; 
+        display:block;
+    }
+
+    .profile-header {
+        display: flex;
+    }
+
+    .nav-link-list {
+        display: none;
+    }
+
+    .top-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .certificate-section{
+       margin: 0px;
+    }
+
+    .coursework-section,
+    .location-section {
+        width: 100%;
+        max-width: 100%;
+        padding: 15px 0px;
+    }
+
+    .image-container img {
+        margin: 0px;
+        max-width: 80%;
+    }
+
+    figure {
+        margin: 0px;
+    }
+
+    .course-list-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+    }
+
+    .course-button {
+        margin-top: 8px;
+        width: 100%;
+    }
+
+    .certificate-filter {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .filter-btn {
+        width: 32%;
+        margin: 0px;
+    }
+}

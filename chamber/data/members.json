@@ -1,0 +1,59 @@
+[
+    {
+      "name": "Sunshine Cafe",
+      "address": "123 Main Street, Aberdeen, ID 83210",
+      "phone": "(208) 555-1234",
+      "website": "https://www.sunshinecafe.com",
+      "image": "../images/cafe.jfif",
+      "membership": 3
+    },
+    {
+      "name": "Mountain View Hardware",
+      "address": "456 Second Avenue, Aberdeen, ID 83210",
+      "phone": "(208) 555-5678",
+      "website": "https://www.mountainviewhardware.com",
+      "image": "../images/hardware.jfif",
+      "membership": 2
+    },
+    {
+      "name": "Aberdeen Fitness",
+      "address": "789 Third Street, Aberdeen, ID 83210",
+      "phone": "(208) 555-9876",
+      "website": "https://www.aberdeenfitness.com",
+      "image": "../images/fitness.jfif",
+      "membership": 1
+    },
+    {
+      "name": "Greenscape Landscaping",
+      "address": "321 Green Street, Aberdeen, ID 83210",
+      "phone": "(208) 555-6543",
+      "website": "https://www.greenscapelandscaping.com",
+      "image": "../images/landscaping.jfif",
+      "membership": 3
+    },
+    {
+      "name": "Pinewood Books",
+      "address": "654 Fourth Avenue, Aberdeen, ID 83210",
+      "phone": "(208) 555-4321",
+      "website": "https://www.pinewoodbooks.com",
+      "image": "../images/books.jfif",
+      "membership": 2
+    },
+    {
+      "name": "Golden Services",
+      "address": "987 Fifth Street, Aberdeen, ID 83210",
+      "phone": "(208) 555-2468",
+      "website": "https://www.goldenservices.com",
+      "image": "../images/massage.jfif",
+      "membership": 1
+    },
+    {
+      "name": "Silverline Tech",
+      "address": "135 Sixth Avenue, Aberdeen, ID 83210",
+      "phone": "(208) 555-8642",
+      "website": "https://www.silverlinetech.com",
+      "image": "../images/phones.jfif",
+      "membership": 2
+    }
+  ]
+  

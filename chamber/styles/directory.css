@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: white;
+    color: #333;
+}
+
+h1, h2 {
+    color: #cc3333;
+}
+
+:root {
+    --navy-blue: #003366;
+    --red: #cc3333;
+    --white: #ffffff;
+}
+
+header {
+    background-color: var(--navy-blue);
+    color: var(--white);
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    color: var(--red);
+}
+
+main {
+    padding: 35px;
+    text-align: center;
+    flex: 1;
+}
+
+button {
+    background-color: var(--red);
+    color: var(--white);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--navy-blue);
+}
+
+.list-view {
+    display: block;
+}
+
+.list-view .member-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.member-card {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    width: 30%;
+    display: inline-block;
+    text-align: center;
+}
+
+.member-card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+footer {
+    background-color: var(--navy-blue);
+    color: var(--white);
+    padding: 1rem;
+    text-align: center;
+    margin-top: auto;
+}
+
+footer a {
+    color: var(--white);
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    color: var(--red);
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 1rem;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .member-card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 8px 0;
+    }
+
+    .member-card {
+        width: 100%;
+        margin: 10px 0;
+    }
+}

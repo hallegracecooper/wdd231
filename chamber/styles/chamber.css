@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --navy-blue: #003366;
+    --red: #cc3333;
+    --white: #ffffff;
+    --light-gray: #f4f4f4;
+    --dark-gray: #444444;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: var(--white);
+    color: var(--dark-gray);
+}
+
+h1, h2 {
+    color: var(--red);
+    margin-bottom: 5px;
+}
+
+header {
+    background-color: var(--navy-blue);
+    color: var(--white);
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    color: var(--red);
+}
+
+main {
+    padding: 35px;
+    text-align: center;
+    flex: 1;
+}
+
+/* button {
+    background-color: var(--red);
+    color: var(--white);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--navy-blue);
+} */
+
+.member-card {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 8px;
+    background-color: var(--light-gray);
+    width: 30%;
+    display: inline-block;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.member-card:hover {
+    transform: scale(1.05);
+}
+
+.member-card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.forecast-cards-box{ 
+    display: flex;
+    justify-content: center
+}
+
+.forecast-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 18px;
+    box-shadow: 2px 5px 5px #ddd;
+    margin: 15px;
+}
+
+.current-weather-box {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.current-weather-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 18px;
+    box-shadow: 2px 5px 5px #ddd;
+    margin: 15px;
+    width: 25%;
+}

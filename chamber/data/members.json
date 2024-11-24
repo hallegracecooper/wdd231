@@ -4,7 +4,7 @@
       "address": "123 Main Street, Aberdeen, ID 83210",
       "phone": "(208) 555-1234",
       "website": "https://www.sunshinecafe.com",
-      "image": "../images/cafe.jfif",
+      "image": "images/cafe.jfif",
       "membership": 3
     },
     {
@@ -12,7 +12,7 @@
       "address": "456 Second Avenue, Aberdeen, ID 83210",
       "phone": "(208) 555-5678",
       "website": "https://www.mountainviewhardware.com",
-      "image": "../images/hardware.jfif",
+      "image": "images/hardware.jfif",
       "membership": 2
     },
     {
@@ -20,7 +20,7 @@
       "address": "789 Third Street, Aberdeen, ID 83210",
       "phone": "(208) 555-9876",
       "website": "https://www.aberdeenfitness.com",
-      "image": "../images/fitness.jfif",
+      "image": "images/fitness.jfif",
       "membership": 1
     },
     {
@@ -28,7 +28,7 @@
       "address": "321 Green Street, Aberdeen, ID 83210",
       "phone": "(208) 555-6543",
       "website": "https://www.greenscapelandscaping.com",
-      "image": "../images/landscaping.jfif",
+      "image": "images/landscaping.jfif",
       "membership": 3
     },
     {
@@ -36,7 +36,7 @@
       "address": "654 Fourth Avenue, Aberdeen, ID 83210",
       "phone": "(208) 555-4321",
       "website": "https://www.pinewoodbooks.com",
-      "image": "../images/books.jfif",
+      "image": "images/books.jfif",
       "membership": 2
     },
     {
@@ -44,7 +44,7 @@
       "address": "987 Fifth Street, Aberdeen, ID 83210",
       "phone": "(208) 555-2468",
       "website": "https://www.goldenservices.com",
-      "image": "../images/massage.jfif",
+      "image": "images/massage.jfif",
       "membership": 1
     },
     {
@@ -52,7 +52,7 @@
       "address": "135 Sixth Avenue, Aberdeen, ID 83210",
       "phone": "(208) 555-8642",
       "website": "https://www.silverlinetech.com",
-      "image": "../images/phones.jfif",
+      "image": "images/phones.jfif",
       "membership": 2
     }
   ]

@@ -10,7 +10,7 @@ async function fetchMembers() {
             const card = document.createElement('div');
             card.classList.add('member-card');
             card.innerHTML = `
-                <img src="images/${member.image}" alt="${member.name}">
+                <img src="${member.image}" alt="${member.name}">
                 <h3>${member.name}</h3>
                 <p>${member.address}</p>
                 <p>${member.phone}</p>

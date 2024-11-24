@@ -68,11 +68,11 @@ function displayThreeDayForeCast(data) {
 
     forecast.forEach((forecastItem, index) => {
         document.getElementById(`forecast-day-${index + 1}`).textContent = `${forecastItem.date} (${forecastItem.day}) `;
-        document.getElementById(`forecast-feels-like-${index + 1}`).textContent = `Feels Like: ${forecastItem.feelsLike}F`
-        document.getElementById(`forecast-temp-${index + 1}`).textContent = `Avg: ${forecastItem.temp}F`
-        document.getElementById(`forecast-high-${index + 1}`).textContent = `High: ${forecastItem.high}F`
-        document.getElementById(`forecast-low-${index + 1}`).textContent = `Low: ${forecastItem.low}F`
-        document.getElementById(`forecast-humidty-${index + 1}`).textContent = `Humidity: ${forecastItem.humidity}%`
+        document.getElementById(`forecast-feels-like-${index + 1}`).textContent = `Feels Like: ${forecastItem.feelsLike}°F`
+        document.getElementById(`forecast-temp-${index + 1}`).textContent = `Avg: ${forecastItem.temp}°F`
+        document.getElementById(`forecast-high-${index + 1}`).textContent = `High: ${forecastItem.high}°F`
+        document.getElementById(`forecast-low-${index + 1}`).textContent = `Low: ${forecastItem.low}°F`
+        document.getElementById(`forecast-humidity-${index + 1}`).textContent = `Humidity: ${forecastItem.humidity}%`
     });
 }
 
@@ -101,6 +101,7 @@ function convertDateTimeToObject(dt_txt) {
 fetch('data/members.json')
     .then(response => response.json())
     .then(members => {
+        console.log(members);
         displaySpotlight(members);
     })
     .catch(error => {
@@ -116,7 +117,8 @@ function displaySpotlight(members) {
         const spotlightContainer = document.getElementById('spotlight-members');
 
         const card = document.createElement('div');
-        card.classList.add('spotlight-card');
+        card.classList.add('member-card');
+        
 
         const image = document.createElement('img');
         image.src = member.image;

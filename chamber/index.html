@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aberdeen Chamber of Commerce</title>
     <meta name="description" content="Aberdeen Chamber of Commerce homepage, with the latest events, weather, and company spotlights.">
     <meta name="author" content="Your Full Name">
-    <title>Aberdeen Chamber of Commerce</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <meta property="og:title" content="Aberdeen Chamber of Commerce">
     <meta property="og:type" content="website">
@@ -29,69 +29,70 @@
     </header>
 
     <main>
-        <section id="hero">
-            <img src="images/hero-image.jpg" alt="Welcome to the Aberdeen Chamber of Commerce" class="hero-img">
-            <div class="hero-content">
-                <h2>Welcome to the Aberdeen Chamber of Commerce</h2>
-                <p>Join us today and be a part of our thriving business community!</p>
-                <a href="join.html" class="cta-button">Join Now</a>
+        <section class="main-content">
+            <div class="left-column">
+                <section id="welcome" class="welcome-section">
+                    <div id="hero" class="hero-section">
+                        <img src="images/hero.jpg" alt="Welcome to the Aberdeen Chamber of Commerce" class="hero-image">
+                        <div class="hero-content">
+                            <h2>Welcome to the Aberdeen Chamber of Commerce</h2>
+                            <p>Join us today and be a part of our thriving business community!</p>
+                            <a href="join.html" class="cta-button">Join Now</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="right-column">
+                <section id="current-events" class="current-events-section">
+                    <h2>Current Events</h2>
+                    <p>Stay up to date with the latest happenings in our local community. Check out upcoming events, meetings, and more!</p>
+                    <div id="event-list" class="event-list">
+                        <ul>
+                            <li>Annual Chamber Gala – December 15, 2024</li>
+                            <li>Business Networking Mixer – January 10, 2025</li>
+                        </ul>
+                    </div>
+                </section>
+                <section id="weather" class="weather-section">
+                    <h3>Weather Forecast</h3>
+                    <div class="weather-content">
+                        <div class="current-weather">
+                            <h2>Current</h2>
+                            <h4 id="weather-description"></h4>
+                            <p id="current-temperature"></p>
+                        </div>
+                        <div class="forecast-cards">
+                            <div class="forecast-card">
+                                <h4 id="forecast-day-1"></h4>
+                                <p id="forecast-feels-like-1"></p>
+                                <p id="forecast-temp-1"></p>
+                                <p id="forecast-high-1"></p>
+                                <p id="forecast-low-1"></p>
+                                <p id="forecast-humidity-1"></p>
+                            </div>
+                            <div class="forecast-card">
+                                <h4 id="forecast-day-2"></h4>
+                                <p id="forecast-feels-like-2"></p>
+                                <p id="forecast-temp-2"></p>
+                                <p id="forecast-high-2"></p>
+                                <p id="forecast-low-2"></p>
+                                <p id="forecast-humidity-2"></p>
+                            </div>
+                            <div class="forecast-card">
+                                <h4 id="forecast-day-3"></h4>
+                                <p id="forecast-feels-like-3"></p>
+                                <p id="forecast-temp-3"></p>
+                                <p id="forecast-high-3"></p>
+                                <p id="forecast-low-3"></p>
+                                <p id="forecast-humidity-3"></p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
         </section>
 
-        <section id="current-events">
-            <h2>Current Events</h2>
-            <p>Stay up to date with the latest happenings in our local community. Check out upcoming events, meetings, and more!</p>
-            <div id="event-list">
-                <ul>
-                    <li>Annual Chamber Gala – December 15, 2024</li>
-                    <li>Business Networking Mixer – January 10, 2025</li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="weather">
-            <div class="current-weather-box">
-                <div class="current-weather-card">
-                    <h2>Current Weather</h2>
-                    <h4 id="weather-description"></h4>
-                    <p id="current-temperature"></p>
-                </div>
-            </div>
-            <div class="three-day-forecast-box">
-                <div>
-                    <h3>3-Day Forecast</h3> 
-                </div>
-                <div class="forecast-cards-box">
-                    <div class="forecast-card">
-                        <h4 id="forecast-day-1"></h3>
-                        <p id="forecast-feels-like-1"></p>
-                        <p id="forecast-temp-1"></p>
-                        <p id="forecast-high-1"></p>
-                        <p id="forecast-low-1"></p>
-                        <p id="forecast-humidty-1"></p>
-                    </div>
-                    <div class="forecast-card">
-                        <h4 id="forecast-day-2"></h3>
-                        <p id="forecast-feels-like-2"></p>
-                        <p id="forecast-temp-2"></p>
-                        <p id="forecast-high-2"></p>
-                        <p id="forecast-low-2"></p>
-                        <p id="forecast-humidty-2"></p>
-                    </div>
-                    <div class="forecast-card">
-                        <h4 id="forecast-day-3"></h3>
-                        <p id="forecast-feels-like-3"></p>
-                        <p id="forecast-temp-3"></p>
-                        <p id="forecast-high-3"></p>
-                        <p id="forecast-low-3"></p>
-                        <p id="forecast-humidty-3"></p>
-                    </div class="forecast-card">
-                </div>
-            </div>
-          
-        </section>
-        
-        <section id="spotlight-members">
+        <section id="spotlight-members" class="spotlight-section">
             <h2>Spotlight Members</h2>
         </section>
     </main>
@@ -110,4 +111,3 @@
     </footer>
 </body>
 </html>
-

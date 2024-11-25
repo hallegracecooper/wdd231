@@ -84,6 +84,17 @@ main {
     .right-column {
         max-width: 100%
     }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
 }
 
 @media (min-width: 768px) {

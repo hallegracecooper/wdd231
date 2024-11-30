@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You for Joining</title>
+    <meta name="description" content="Thank you for joining the Aberdeen Chamber of Commerce!">
+    <link rel="stylesheet" href="styles/join.css">
+</head>
+<body>
+    <header>
+        <h1>Thank You for Joining the Aberdeen Chamber of Commerce!</h1>
+    </header>
+
+    <main>
+        <h2>We have received your submission:</h2>
+        <p>First Name: <span id="firstNameDisplay"></span></p>
+        <p>Last Name: <span id="lastNameDisplay"></span></p>
+        <p>Email: <span id="emailDisplay"></span></p>
+        <p>Phone: <span id="phoneDisplay"></span></p>
+        <p>Organization: <span id="organizationDisplay"></span></p>
+        <p>Membership Level: <span id="membershipDisplay"></span></p>
+        <p>Timestamp: <span id="timestampDisplay"></span></p>
+    </main>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        document.getElementById('firstNameDisplay').textContent = urlParams.get('firstName');
+        document.getElementById('lastNameDisplay').textContent = urlParams.get('lastName');
+        document.getElementById('emailDisplay').textContent = urlParams.get('email');
+        document.getElementById('phoneDisplay').textContent = urlParams.get('phone');
+        document.getElementById('organizationDisplay').textContent = urlParams.get('organization');
+        document.getElementById('membershipDisplay').textContent = urlParams.get('membership');
+        document.getElementById('timestampDisplay').textContent = urlParams.get('timestamp');
+    </script>
+
+    <footer>
+        <p>Aberdeen, Idaho Chamber of Commerce</p>
+        <p>123 Main Street, Aberdeen, ID 83210</p>
+        <p>Email: contact@aberdeenchamber.com | Phone: (208) 555-1234</p>
+    </footer>
+</body>
+</html>

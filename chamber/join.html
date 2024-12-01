@@ -7,7 +7,6 @@
     <meta name="description" content="Aberdeen Chamber of Commerce Join Form for joining as a member.">
     <meta name="author" content="Halle Cooper">
     <link rel="stylesheet" href="styles/join.css">
-    <script src="scripts/join.js" defer></script>
 </head>
 <body>
     <header>
@@ -24,71 +23,76 @@
 
     <main>
         <h2>Join Our Chamber</h2>
-        <form action="thankyou.html" method="get">
-            <label for="firstName">First Name:
-                <input type="text" id="firstName" name="firstName" required title="First Name" autocomplete="given-name">
-            </label>
-    
-            <label for="lastName">Last Name:
-                <input type="text" id="lastName" name="lastName" required title="Last Name" autocomplete="family-name">
-            </label>
-    
-            <label for="orgTitle">Organizational Title:
-                <input type="text" id="orgTitle" name="orgTitle" title="Organizational Title" autocomplete="organization-title" pattern="[A-Za-z\- ]{7,}">
-            </label>
-    
-            <label for="email">Email:
-                <input type="email" id="email" name="email" required title="Email" autocomplete="email" placeholder="example@domain.com">
-            </label>
-    
-            <label for="phone">Mobile Phone:
-                <input type="tel" id="phone" name="phone" required title="Mobile Phone" autocomplete="tel">
-            </label>
-    
-            <label for="organization">Organization Name:
-                <input type="text" id="organization" name="organization" required title="Organization Name" autocomplete="organization">
-            </label>
-    
-            <fieldset>
-                <legend>Membership Level:</legend>
-                <label><input type="radio" name="membership" value="NP" required> NP Membership</label>
-                <label><input type="radio" name="membership" value="Bronze"> Bronze Membership</label>
-                <label><input type="radio" name="membership" value="Silver"> Silver Membership</label>
-                <label><input type="radio" name="membership" value="Gold"> Gold Membership</label>
-            </fieldset>
-    
-            <label for="description">Organization Description:
-                <textarea id="description" name="description" rows="5" title="Organization Description"></textarea>
-            </label>
-    
-            <input type="hidden" id="timestamp" name="timestamp">
-    
-            <button type="submit">Join Now</button>
-        </form>
+        <div class="container">
+            <div class="form-section">
+                <form action="thankyou.html" method="get">
+                    <label for="firstName">First Name:
+                        <input type="text" id="firstName" name="firstName" required title="First Name" autocomplete="given-name">
+                    </label>
+            
+                    <label for="lastName">Last Name:
+                        <input type="text" id="lastName" name="lastName" required title="Last Name" autocomplete="family-name">
+                    </label>
+            
+                    <label for="orgTitle">Organizational Title:
+                        <input type="text" id="orgTitle" name="orgTitle" title="Organizational Title" autocomplete="organization-title" pattern="[A-Za-z\- ]{7,}">
+                    </label>
+            
+                    <label for="email">Email:
+                        <input type="email" id="email" name="email" required title="Email" autocomplete="email" placeholder="example@domain.com">
+                    </label>
+            
+                    <label for="phone">Mobile Phone:
+                        <input type="tel" id="phone" name="phone" required title="Mobile Phone" autocomplete="tel">
+                    </label>
+            
+                    <label for="organization">Organization Name:
+                        <input type="text" id="organization" name="organization" required title="Organization Name" autocomplete="organization">
+                    </label>
+            
+                    <fieldset>
+                        <legend>Membership Level:</legend>
+                        <label><input type="radio" name="membership" value="NP" required> NP Membership</label>
+                        <label><input type="radio" name="membership" value="Bronze"> Bronze Membership</label>
+                        <label><input type="radio" name="membership" value="Silver"> Silver Membership</label>
+                        <label><input type="radio" name="membership" value="Gold"> Gold Membership</label>
+                    </fieldset>
+            
+                    <label for="description">Organization Description:
+                        <textarea id="description" name="description" rows="5" title="Organization Description"></textarea>
+                    </label>
+            
+                    <input type="hidden" id="timestamp" name="timestamp">
+            
+                    <button type="submit">Join Now</button>
+                </form>
+            </div>
+            <div class="modals-section">
+                <section class="membership-cards">
+                    <div class="card" onclick="openModal('npModal')">
+                        <h3>NP Membership</h3>
+                        <p>Free for non-profits</p>
+                        <button>Learn More</button>
+                    </div>
+                    <div class="card" onclick="openModal('bronzeModal')">
+                        <h3>Bronze Membership</h3>
+                        <p>Basic benefits package</p>
+                        <button>Learn More</button>
+                    </div>
+                    <div class="card" onclick="openModal('silverModal')">
+                        <h3>Silver Membership</h3>
+                        <p>Includes events & training</p>
+                        <button>Learn More</button>
+                    </div>
+                    <div class="card" onclick="openModal('goldModal')">
+                        <h3>Gold Membership</h3>
+                        <p>Premium benefits</p>
+                        <button>Learn More</button>
+                    </div>
+                </section>
+            </div>
+        </div>
 
-        <section class="membership-cards">
-            <div class="card" onclick="openModal('npModal')">
-                <h3>NP Membership</h3>
-                <p>Free for non-profits</p>
-                <button>Learn More</button>
-            </div>
-            <div class="card" onclick="openModal('bronzeModal')">
-                <h3>Bronze Membership</h3>
-                <p>Basic benefits package</p>
-                <button>Learn More</button>
-            </div>
-            <div class="card" onclick="openModal('silverModal')">
-                <h3>Silver Membership</h3>
-                <p>Includes events & training</p>
-                <button>Learn More</button>
-            </div>
-            <div class="card" onclick="openModal('goldModal')">
-                <h3>Gold Membership</h3>
-                <p>Premium benefits</p>
-                <button>Learn More</button>
-            </div>
-        </section>
-    
         <div id="npModal" class="modal">
             <div class="modal-content">
                 <span class="close" onclick="closeModal('npModal')">&times;</span>
@@ -142,6 +146,11 @@
                 }
             });
         }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const lastModifiedSpan = document.getElementById('lastModified');
+            lastModifiedSpan.textContent = document.lastModified;
+        });
     </script>
 
     <footer>

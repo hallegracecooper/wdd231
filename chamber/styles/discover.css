@@ -71,7 +71,7 @@ nav ul li a:hover {
 .gallery {
     display: flex;
     flex-direction: column;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 h2{ 
@@ -80,9 +80,10 @@ h2{
 }
 
 .gallery img {
-    width: 100%;
-    border-radius: 8px;
+    width: 75%;
+    border-radius: 20px;
     transition: transform 0.3s ease;
+    align-items: center;
 }
 
 .gallery img:hover {
@@ -97,6 +98,11 @@ h2{
 
     .gallery img:hover {
         transform: none;
+    }
+
+    gallery img {
+        width: 100%;
+        border-radius: 8px;
     }
 }
 

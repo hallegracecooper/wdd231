@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health and Wellness Feedback Form</title>
+    <meta name="description" content="Wellness form to submit.">
+    <meta name="author" content="Halle Cooper">
+    <link rel="stylesheet" href="styles/projectform.css">
+</head>
+<body>
+    <main>
+        <h1>Health and Wellness Feedback Form</h1>
+        <p class="intro-text">We know that staying active and eating right can be challenging. But we’re here to support you on your wellness journey, helping you make sustainable changes one step at a time.</p>
+        <p id="feedbackCountDisplay" class="feedback-count"></p>
+
+
+        <form id="feedbackForm" method="get" action="https://hallegracecooper.github.io/wdd131//projectFormFeedback.html">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="exerciseRating">Exercise Satisfaction:</label>
+            <select id="exerciseRating" name="exerciseRating" required>
+                <option value="" disabled selected>Select your rating...</option>
+                <option value="1">1 - Very Unsatisfied</option>
+                <option value="2">2 - Unsatisfied</option>
+                <option value="3">3 - Neutral</option>
+                <option value="4">4 - Satisfied</option>
+                <option value="5">5 - Very Satisfied</option>
+            </select>
+
+            <label for="nutritionRating">Nutrition Satisfaction:</label>
+            <select id="nutritionRating" name="nutritionRating" required>
+                <option value="" disabled selected>Select your rating...</option>
+                <option value="1">1 - Very Unsatisfied</option>
+                <option value="2">2 - Unsatisfied</option>
+                <option value="3">3 - Neutral</option>
+                <option value="4">4 - Satisfied</option>
+                <option value="5">5 - Very Satisfied</option>
+            </select>
+
+            <label for="waterIntake">Daily Water Intake (in cups):</label>
+            <input type="number" id="waterIntake" name="waterIntake" min="0" required>
+
+            <label for="successes">What’s Going Well in Your Journey?</label>
+            <textarea id="successes" name="successes" rows="3" placeholder="Share your achievements..."></textarea>
+
+            <label for="improvements">What Could Be Improved?</label>
+            <textarea id="improvements" name="improvements" rows="3" placeholder="Share areas you'd like to work on..."></textarea>
+
+            <input type="submit" value="Submit Feedback">
+        </form>
+    </main>
+    <script>
+        document.getElementById("wellnessForm").addEventListener("submit", function(event) {
+            event.preventDefault(); 
+    
+            const feedbackData = this.elements['feedback'].value;
+    
+            localStorage.setItem("userFeedback", feedbackData);
+    
+            window.location.href = "https://hallegracecooper.github.io/wdd131//projectFormFeedback.html";
+        });
+    </script>    
+</body>
+</html>

@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #001f3f;
+    color: #fff;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #FF4136;
+}
+
+header h1 {
+    font-family: Georgia, serif;
+    color: #fff;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 10px 0;
+    padding: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #FF4136;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+}
+
+main {
+    background-color: #fff;
+    color: #000;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #001f3f;
+    font-family: Georgia, serif;
+    margin-bottom: 10px;
+}
+
+.recipe, .challenge {
+    padding: 15px;
+    border: 2px solid #001f3f;
+    border-radius: 5px;
+}
+
+.recipe p, .challenge p {
+    font-size: 1em;
+    color: #333;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #FF4136;
+    color: #fff;
+    margin-top: 20px;
+    font-size: 0.9em;
+}

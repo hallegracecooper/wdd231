@@ -1,0 +1,197 @@
+html {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background: #fdfdfd;
+    color: #001f3f;
+    height: 100%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    line-height: 1.4;
+    min-height: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+header {
+    background: #001f3f;
+    color: #ffffff;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-bar h1 {
+    margin-left: 20px;
+    font-size: 34px;
+    font-family: Georgia, serif;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+}
+
+.title-text h1 {
+    margin-left: 25px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: #001f3f;
+    text-align: center;
+    width: 100%;
+}
+
+nav ul li {
+    margin: 0;
+    border-bottom: 1px solid #fff;
+}
+
+nav ul li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+nav.hidden {
+    display: none;
+}
+
+#nav-toggle {
+    background-color: #001f3f;
+    color: #fff;
+    border: none;
+    font-size: 28px;
+    margin-top: -4px;
+}
+
+@media (min-width: 600px) {
+    nav.hidden {
+        display: block;
+    }
+    nav ul {
+        display: flex;
+    }
+    nav ul li {
+        border: none;
+    }
+    nav ul li a {
+        border-right: 1px solid #fff;
+    }
+    nav ul li:last-child a {
+        border-right: none;
+    }
+
+    #nav-toggle {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    #main-nav {
+        width: 100%;
+    }
+
+    .top-bar {
+        flex-direction: row;
+        align-items: self-start;
+    }
+}
+
+main {
+    padding: 1rem;
+    margin: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    display: block;
+    margin-top: 0.5rem;
+}
+
+form input, form button {
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    width: 100%;
+    max-width: 300px;
+}
+
+#recipes-container, #exercises-container {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 600px) {
+    #recipes-container, #exercises-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.recipe-item, .exercise-item {
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    background: #fff;
+}
+
+.recipe-item img, .exercise-item img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    background: #001f3f;
+    color: #fff;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+dialog {
+    border: none;
+    padding: 1rem;
+    border-radius: 4px;
+    background: #fff;
+    max-width: 300px;
+}
+
+input {
+    border-radius: 5px;
+    border: #ccc 1px solid;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #E3A234;
+}
+
+.submit-page main {
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+}
+
